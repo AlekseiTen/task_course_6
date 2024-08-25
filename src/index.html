@@ -291,12 +291,12 @@
                         <div class="card-body">
                             <form>
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                    <input name="name" type="text" class="form-control" id="exampleInputEmail1"
                                            placeholder="Имя">
                                 </div>
                                 <div class="mb-3">
-                                    <input type="email" class="form-control" id="exampleInputPassword1"
-                                            placeholder="Email">
+                                    <input name="email" type="email" class="form-control" id="exampleInputPassword1"
+                                           placeholder="Email">
                                 </div>
                                 <button type="submit" class="btn btn-primary">Отправить</button>
                             </form>
@@ -306,41 +306,90 @@
 
                 <div class="col-12">
                     <div class="card mb-4 rounded-3 shadow-sm">
-                    <p class="h2 text-center">FAQ</p>
-                    <div class="card-body">
-                        <p class="d-inline-flex gap-1">
-                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseBuy" role="button"
-                               aria-expanded="false" aria-controls="collapseBuy">
-                                Как купить?
-                            </a>
-                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseDelivery" role="button"
-                               aria-expanded="false" aria-controls="collapseDelivery">
-                                Как доставить?
-                            </a>
-                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseWarranty" aria-expanded="false"
-                                    aria-controls="collapseWarranty">
-                                Какая гарантия?
-                            </button>
-                        </p>
-                        <div class="collapse" id="collapseBuy">
-                            <div class="card card-body">
-                                Вам необходимо добавить товар в корзину!
+                        <p class="h2 text-center">FAQ</p>
+                        <div class="card-body">
+                            <p class="d-inline-flex gap-1">
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseBuy" role="button"
+                                   aria-expanded="false" aria-controls="collapseBuy">
+                                    Как купить?
+                                </a>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseDelivery"
+                                   role="button"
+                                   aria-expanded="false" aria-controls="collapseDelivery">
+                                    Как доставить?
+                                </a>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseWarranty" aria-expanded="false"
+                                        aria-controls="collapseWarranty">
+                                    Какая гарантия?
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapseBuy">
+                                <div class="card card-body">
+                                    Вам необходимо добавить товар в корзину!
+                                </div>
                             </div>
-                        </div>
-                        <div class="collapse" id="collapseDelivery">
-                            <div class="card card-body">
-                                Доставка осуществляется компанией DHL
+                            <div class="collapse" id="collapseDelivery">
+                                <div class="card card-body">
+                                    Доставка осуществляется компанией DHL
+                                </div>
                             </div>
-                        </div>
-                        <div class="collapse" id="collapseWarranty">
-                            <div class="card card-body">
-                                Если товар к вам не доставят, мы вернём деньги, или отправим новый!
+                            <div class="collapse" id="collapseWarranty">
+                                <div class="card card-body">
+                                    Если товар к вам не доставят, мы вернём деньги, или отправим новый!
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                </div>
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Номер</th>
+                        <th scope="col">Название товара</th>
+                        <th scope="col">Цена за штуку</th>
+                        <th scope="col">Количество</th>
+                        <th scope="col">Итоговая сумма</th>
+                        <th scope="col">Статус заказа</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Кроссовки</td>
+                        <td>5000</td>
+                        <td>12</td>
+                        <td>60000</td>
+                        <td class="table-primary">Новый</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Туфли</td>
+                        <td>7000</td>
+                        <td>5</td>
+                        <td>35000</td>
+                        <td class="table-warning">Обработка</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Сапоги</td>
+                        <td>10000</td>
+                        <td>10</td>
+                        <td>100000</td>
+                        <td class="table-success">Обработан</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Шлёпки</td>
+                        <td>2000</td>
+                        <td>20</td>
+                        <td>40000</td>
+                        <td class="table-danger">Отмена</td>
+                    </tr>
+                    </tbody>
+                </table>
+
             </div>
         </main>
 
